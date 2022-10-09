@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, Arial, sans-serif;
+}
+
+.page-height {
+  min-height: calc(100vh - 160px);
+}
+
+.input-field-label {
+  @apply text-sm;
+}
+.input-field {
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full outline-none;
+}
+.form-button {
+  @apply text-white bg-[#004d6d] hover:bg-[#06384d] focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-lg w-full p-[0.5625rem] text-center;
+}
+.blue-button {
+  @apply text-white bg-[#004d6d] hover:bg-[#06384d] focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5;
+}
+.flex-center {
+  @apply flex items-center justify-center;
+}
+.user-card {
+  @apply gap-2 p-5 rounded-2xl text-black border border-slate-200 drop-shadow hover:scale-[1.04] transition-all duration-200;
+}
+
+@media (max-width: 768px) {
+  .page-height {
+    min-height: calc(100vh - 260px);
+  }
+}
+
+body {
+  margin: 0;
+}
